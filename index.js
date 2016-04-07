@@ -73,7 +73,7 @@ var FloatLabelTextField = React.createClass({
 
   withBorder: function() {
     if (!this.props.noBorder) {
-      return styles.withBorder;
+      return this.props.err ? styles.errBorder : styles.withBorder;
     };
   },
 
@@ -181,6 +181,11 @@ var styles = StyleSheet.create({
   withBorder: {
     borderBottomWidth: 1 / 2,
     borderColor: '#C8C7CC',
+    marginBottom: 3
+  },
+  errBorder: {
+    borderBottomWidth: 1 / 2,
+    borderColor: '#a94442',
     marginBottom: 3
   },
   valueText: {
