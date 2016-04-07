@@ -181,7 +181,7 @@ var styles = StyleSheet.create({
   withBorder: {
     borderBottomWidth: 1 / 2,
     borderColor: '#C8C7CC',
-    borderBottomWidth: 0.5
+    marginBottom: 3
   },
   valueText: {
     height: 20,
