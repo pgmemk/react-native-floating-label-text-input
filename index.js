@@ -21,7 +21,7 @@ var FloatingLabel = React.createClass({
 
   componentWillReceiveProps: function(newProps) {
     Animated.timing(this.state.paddingAnim, {
-      toValue: newProps.visible ? 5 : 9,
+      toValue: newProps.visible ? 0 : 9,
       duration: 230
     }).start();
 
