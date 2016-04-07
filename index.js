@@ -170,7 +170,7 @@ var styles = StyleSheet.create({
   },
   fieldLabel: {
     height: 10,
-    fontSize: 9,
+    fontSize: 12,
     color: '#B1B1B1'
   },
   fieldContainer: {
@@ -184,14 +184,15 @@ var styles = StyleSheet.create({
   },
   valueText: {
     height: 20,
-    fontSize: 16,
+    fontFamily: 'Helvetica Neue, STHeiTi, sans-serif',
+    fontSize: 18,
     color: '#111111'
   },
   withMargin: {
-    marginTop: 10
+    marginTop: 20
   },
   focussed: {
-    color: "#1482fe"
+    // color: "#1482fe"
   }
 });
 
