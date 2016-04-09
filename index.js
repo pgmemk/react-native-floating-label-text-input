@@ -9,7 +9,7 @@ var FloatingLabel = React.createClass({
     var initialOpacity = 0;
 
     if (this.props.visible) {
-      initialPadding = 5
+      initialPadding = 0
       initialOpacity = 1
     }
 
@@ -99,6 +99,7 @@ var FloatLabelTextField = React.createClass({
               />
             </TextFieldHolder>
           </View>
+          <View style={styles.paddingView}></View>
         </View>
       </View>
     );
@@ -169,8 +170,10 @@ var styles = StyleSheet.create({
     left: 0
   },
   fieldLabel: {
-    height: 10,
+    height: 12,
     fontSize: 12,
+    paddingBottom: 5,
+    marginTop: -5,
     color: '#B1B1B1'
   },
   fieldContainer: {
@@ -180,13 +183,11 @@ var styles = StyleSheet.create({
   },
   withBorder: {
     borderBottomWidth: 1 / 2,
-    borderColor: '#C8C7CC',
-    marginBottom: 3
+    borderColor: '#C8C7CC'
   },
   errBorder: {
     borderBottomWidth: 1 / 2,
-    borderColor: '#a94442',
-    marginBottom: 3
+    borderColor: '#cccccc',
   },
   valueText: {
     height: 20,
